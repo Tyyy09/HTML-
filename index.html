@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="This week we will be creating our layout using CSS Flexbox">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Ordering Pizza</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body style="background-image: url('./img/background1.jpg');
+             background-size: cover;
+             background-repeat: no-repeat;
+             background-position: center;">
+    <header>
+        <h1>PIZZA KOKO</h1>
+        <nav>
+            <menu>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">About Us</a></li>
+            </menu>
+        </nav>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <form>
+            <!-- Section 1 for Order Detail-->
+            <section>
+                <h2>Ordering Pizza</h2>
+                <!-- class for easy to apply css as they all are the same type of content-->
+                <div class="form-group">
+                    <label for="quantity">Quantity :</label>
+                    <input id="quantity" type="number" name="quantity" min="1" max="7">
+                </div>
+
+                <!-- I use Select for User choose ONLY choice S/M/L-->
+                <div class="form-group">
+                    <label for="size">Pizza Size :</label>
+                    <select id="size" name="size" required>
+                        <option value="" disabled selected>Select a size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <!-- I use checkbox for User choosing Topping more than 1-->
+                    <label>Topping : </label></div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+                        <label for="pepperoni">Peperoni</label>
+                        <input type="checkbox" id="hot-pepper" name="toppings" value="hot-pepper">
+                        <label for="hot-pepper">Hot pepper</label>
+                    <input type="checkbox" id="olives" name="toppings" value="olives">
+                    <label for="olives">Olives</label>
+                    <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+                    <label for="pineapple">Pineapple</label>
+                    </div>
+            </section>
+
+            <!-- Section 2 for User to fill in their information-->
+            <section>
+                    <h3>Customer Information</h3>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}">
+                    </div>
+            </section>
+
+
+            <section>
+                <h3>Delivery Option</h3>
+            <!-- Section 3 for Delivery option-->
+            <!-- and i going to use radio for choosing an option-->
+                <div class="form-group"><label>Order Type:</label></div>
+                <div class="radio-group">
+                    <input type="radio" id="delivery" name="order_type" value="delivery" required>
+                    <label for="delivery">Delivery</label>
+                    <input type="radio" id="pickup" name="order_type" value="pickup" required>
+                    <label for="pickup">Pickup</label>
+                </div>
+                <div class="form-group">
+                    <label>Delivery Address</label>
+                    <div>
+                        <textarea name="delivery_address" rows="4"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!--Submit Button-->
+            <button type="submit">Order Now</button>
+        </form>
+    </main>
+<footer>
+    <p>Delicious As Always with Pizza Koko</p>
+</footer>
+</body>
+</html>

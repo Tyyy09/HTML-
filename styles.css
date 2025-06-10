@@ -1,0 +1,120 @@
+html{
+        /*Smooth Scrolling*/
+    scroll-behavior: smooth;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+}
+p,a,li{
+    font-family: Poppins, sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+body{
+    background-color: #F2C078;
+    line-height: 1.6;
+    margin: auto;
+    padding: 20px;
+
+}
+/* header editing*/
+header{
+    background-color: #FE5D26;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    display: flex;
+}
+header > h1{
+    align-content: center;
+    font-family: "Berlin Sans FB", sans-serif;
+    color: #FAEDCA;
+    font-size: 70px;
+    display: flex;
+    padding-left: 30px;
+}
+header > nav{
+    display: flex;
+    margin-left: auto;
+    padding-right: 15px;
+    align-content: center;
+}
+header > nav > menu{
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+header > nav > menu > li{
+    padding: 50px 10px;
+}
+header > nav > menu > li > a{
+    color: #FAEDCA;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Main Content Editing*/
+main {
+    background-color: #FAEDCA;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+/* Section styles */
+section {
+    margin-bottom: 30px;
+}
+
+/* Form group styles */
+
+.form-group{
+    margin: 10px;
+    font-family: Roboto,sans-serif;
+    font-weight: bold;
+}
+.form-group label {
+    margin-bottom: 0;
+    display: block;
+}
+/* detail of checkboxes and radio*/
+.checkbox-group,
+.radio-group {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: Roboto, sans-serif;
+}
+/* input Editing*/
+input[type="text"],input[type="email"],input[type="tel"],input[type="number"],select,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding:10px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+
+}
+/* Button*/
+button{
+    padding:10px;
+    background-color: #FE5D26;
+    color: #FAEDCA;
+    border: 0;
+    border-radius: 15px;
+    cursor: pointer;
+}
+footer{
+    background-color: #FE5D26;
+    border-radius: 15px;
+}
+footer > p {
+    color: #FAEDCA;
+    display: flex;
+    font-size: 16px;
+    align-content: center;
+    justify-content: center;
+    font-family: "Berlin Sans FB", sans-serif;
+
+
+}
